@@ -466,7 +466,7 @@
 
      .contacts{
        
-        
+        padding-block: 4rem;
         display: flex;
         flex-direction: column;
         gap: 2rem;
