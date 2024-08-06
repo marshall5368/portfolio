@@ -1,0 +1,450 @@
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Varela+Round&display=swap');
+    :root{
+        --background:#25272a;
+        --primary:#EEEEEE;
+        --secondary:#D65A31;
+        --higligthed:#393E46;
+        --font:"DM Sans", sans-serif;  
+        --bold:"Varela Round", sans-serif ;
+        --secondBackground:#303031;
+    }
+
+    *{
+        pad: 0;
+        margin:0;
+        scroll-behavior: smooth;
+    }
+
+    body{
+        background-color: var(--background);
+    }
+    nav{
+        
+        height: 5vh;
+        padding-top: 2rem;
+        font-family: var(--font);
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+        color: var(--primary);
+
+        .links {
+            display: flex;
+            list-style: none;
+        gap:clamp(1rem , 2vw ,2rem);
+
+        a{
+            color: var(--primary);
+            font-size: clamp(.8rem, 2vw ,1.5rem);
+            text-decoration: none;
+            transition: ease .5s;
+        }
+
+        a:hover{
+            color: var(--secondary);
+            border: var(--secondary) 1px solid;
+            padding: 10px;
+            transform: translateY(10px);
+            border-radius: 100px;
+        }
+        }    
+    }
+    .main{
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .container{
+
+            width: 80vw;    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: baseline;
+            gap: 1rem;
+        
+        .comment{
+            font-family: var(--font);
+            background-color: var(--secondBackground);
+            border-radius: 100px;
+            padding: 10px;
+            color: white;
+            
+            p{
+                transition: ease .3s;
+                cursor: pointer;
+                font-size: clamp(.7rem, 1vw, 1rem);
+            }
+            p:hover{
+                color: var(--secondary);
+            }
+        }
+        .mainText{
+            font-size: clamp(1rem , 5vw, 4rem);
+            text-align: center;
+    
+            color: var(--primary);
+            font-family: var(--font);
+            }
+        
+        .buttons{
+            display: flex;
+    
+            gap: 40px;
+            button{
+                display: flex;
+                gap: 5px;
+                align-items: center;
+                justify-content: center;
+                width: clamp(8rem ,10vw, 10rem);
+                height: clamp(2rem, 4vw , 4rem);
+                border-radius: 100px;
+                cursor: pointer;
+                border: none;
+                background-color: var(--higligthed);
+                color: var(--primary);
+                font-size: clamp(1rem , 2vw ,1.2rem);
+            font-family: var(--font);
+            }
+            .resume{
+                background-color: var(--primary);
+                color: var(--secondary);
+                transition: ease .3s;
+            }
+            .resume:hover{
+                background-color: var(--secondBackground);
+                color: var(--primary);
+            }
+
+            .message{
+                transition: ease .3s;
+                background-color: var(--secondBackground);
+            }
+            .message:hover{
+                color: var(--secondary);
+            }
+        }
+
+        .stats{
+            display: flex;
+            font-family: var(--font);
+            gap: 1rem;
+            .age{
+                width: clamp(7rem,11vw , 11rem);
+                height: clamp(2rem , 3vw, 3rem);
+                font-size: clamp(.6rem , 2vw ,1rem);
+                display: flex;
+                gap: clamp(5px , 1vw ,10px);
+                align-items: center;
+                justify-content: center;
+                background-color: var(--secondBackground);
+        
+                border-radius: 100px;
+                color: var(--primary);
+            }
+            .address{
+                width: clamp(7rem,11vw , 11rem);
+                height: clamp(2rem , 3vw, 3rem);
+                font-size: clamp(.6rem , 2vw ,1rem);
+                display: flex;
+                gap: clamp(5px , 1vw ,10px);
+                align-items: center;
+                justify-content: center;
+                background-color: var(--secondBackground);
+        
+                border-radius: 100px;
+                color: var(--primary);
+                
+            }
+            .coffee{
+                width: clamp(7rem,11vw , 11rem);
+                height: clamp(2rem , 3vw, 3rem);
+                font-size: clamp(.6rem , 2vw ,1rem);
+                display: flex;
+                gap: clamp(5px , 1vw ,10px);
+                align-items: center;
+                justify-content: center;
+                background-color: var(--secondBackground);
+
+                border-radius: 100px;
+                color: var(--primary);
+            }
+        }
+        
+        }
+    }
+
+    .aboutMe{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem , 1fr));
+        height: 100vh;
+
+        justify-content: center;
+        
+        .text{
+            display: flex;
+            flex-direction: column;
+            color: var(--primary);
+            font-family: var(--font);
+            gap: 1rem;
+            padding: clamp(1rem, 5vw, 5rem);
+
+            h1{
+                font-size: clamp(2rem, 3vw, 3rem);
+            }
+            p{
+                font-size: clamp(.9rem, 2vw, 1.4rem);
+            }
+        }
+        .imageSection{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .imageSection img{
+            width: 80%;
+            border-radius: 100%;
+        }
+    }
+
+    .education{
+        height: 100vh;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        .title{
+            color: var(--primary);
+            font-family: var(--font);
+        }
+        .card{
+        
+            width: 70vw;
+            height: 15vh;   
+            display: flex;
+            background-color: var(--secondBackground);
+            padding: 10px;
+            border-radius: 10px;
+
+            .cardImage{
+                width: clamp(9rem , 10vw ,10rem);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                border-radius: 20px;
+
+                img{
+                    width: clamp(9rem , 10vw ,10rem);
+                    height: 15vh;
+                    border-radius: 100%;
+                }
+            }
+            
+            
+            .cardText{
+                color: var(--primary);
+                font-family:var(--font);
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+                h1{
+                    font-size: clamp(1rem, 2vw, 2rem);
+                }
+                p{
+                    font-size: clamp(.7rem , 1vw, 1rem);
+                }
+            }
+        }
+    }
+    .skills{
+
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+        margin-top: 5rem;
+        gap: 1rem;
+            .title{
+                
+                font-family: var(--font);
+                color: var(--primary);
+            
+            }
+
+            .containerCard{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(8rem , 1fr));
+        
+                width: 70vw;
+
+                gap: 1rem;
+                
+                
+                .card{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    width: 8rem;
+                    height: 9rem;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: var(--secondBackground);
+                    border-radius: 20px;
+                }
+                .CardText{
+                    color: var(--primary);
+                    font-family: var(--font);
+                }
+                .htmlimage{
+                    background-image: url("src/logos/html-removebg-preview.png");
+                    width: 6rem;
+                    height: 6rem;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    
+                }
+
+                .cssimage{
+                    background-image: url("src/logos/css.png");
+                    width: 6rem;
+                    height: 6rem;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+                .javaScriptimage{
+                    background-image: url("src/logos/javaScriot-removebg-preview.png");
+                    width: 6rem;
+                    height: 6rem;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    
+                }
+                
+                .canvaimage{
+                    background-image: url("src/logos/canva-removebg-preview.png");
+                    width: 6rem;
+                    height: 6rem;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+                .capcutimage{
+                    background-image: url("src/logos/capcut-removebg-preview.png");
+                    width: 6rem;
+                    height: 6rem;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+                .excelimage{
+                    background-image: url("src/logos/excel-removebg-preview.png");
+                    width: 6rem;
+                    height: 6rem;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+                .gitimage{
+                    background-image: url("src/logos/git-removebg-preview.png");
+                    width: 6rem;
+                    height: 6rem;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+                .gitHubimage{
+                    background-image: url("src/logos/GitHub-logo-removebg-preview.png");
+                    width: 7rem;
+                    height: 6rem;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+                .javaimage{
+                    background-image: url("src/logos/java-removebg-preview.png");
+                    width: 6rem;
+                    height: 6rem;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+                .jqueryimage{
+                    background-image: url("src/logos/jquery-removebg-preview.png");
+                    width: 6rem;
+                    height: 6rem;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+                .msWordimage{
+                    background-image: url("src/logos/msWord-removebg-preview.png");
+                    width: 6rem;
+                    height: 6rem;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+                .powerpointimage{
+                    background-image: url("src/logos/ppt-removebg-preview.png");
+                    width: 6rem;
+                    height: 6rem;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+                .reactimage{
+                    background-image: url("src/logos/react-removebg-preview.png");
+                    width: 6rem;
+                    height: 6rem;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+                .tailwindimage{
+                    background-image: url("src/logos/tailwind-removebg-preview.png");
+                    width: 6rem;
+                    height: 6rem;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+                .vsCodeimage{
+                    background-image: url("src/logos/vsCode-removebg-preview.png");
+                    width: 6rem;
+                    height: 6rem;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+                .photoshopimage{
+                    background-image: url("src/logos/Photoshop-logo-removebg-preview.png");
+                    width: 6rem;
+                    height: 6rem;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+            }
+    }
+
+    .contacts{
+        height: 100vh;
+    }
