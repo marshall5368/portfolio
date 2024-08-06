@@ -445,6 +445,80 @@
             }
     }
 
-    .contacts{
-        height: 100vh;
+     .contacts{
+       
+        padding: 4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        .Title{
+            color: var(--primary);
+            font-family: var(--font);
+            text-align: center;
+        }
+
+        .container{
+            background-color: var(--secondBackground);
+            width: 80vw;
+            height: 50vh;
+            border-radius: 20px;
+            padding:clamp(1rem, 2vw, 2rem);
+            display:grid;
+            grid-template-columns: repeat(auto-fit , minmax(35rem , 1fr));
+
+            .card{
+                width: 35vw;
+   
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                padding: 10px;
+                justify-content:start;
+                .icon{
+                    font-size: clamp(2.5rem , 5vw , 5rem);
+             
+                    .fa-envelope{
+                        color: var(--secondary);
+                    }
+                    .fa-facebook-f{
+                        color: dodgerblue;
+                    }
+                    .fa-address-book{
+                        color: var(--secondary);
+                    }
+                    .fa-instagram{
+                        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                        -webkit-background-clip: text;
+                                /* Also define standard property for compatibility */
+                                background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+                .text{
+                    
+                    color: var(--primary);
+                    font-family: var(--font);
+
+                    h1{
+                        font-size: clamp(1rem , 2vw ,2rem);
+                    }
+                    p{
+                        font-size: clamp(.8rem , 1vw ,1rem);
+                    }
+                    
+                    h1 a{
+                        color: var(--primary);
+                        text-decoration: none;
+                        font-size: clamp(1rem , 2vw ,2rem);
+                    }
+                }
+            }
+
+            @media screen and (max-width: 780px) {
+                .card{
+                    flex-direction: column;
+                    align-items: start;
+                }
+            }
+        }
     }
