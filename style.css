@@ -479,7 +479,7 @@
         .container{
             background-color: var(--secondBackground);
             width: 80vw;
-            height: 50vh;
+            height: 60vh;
             border-radius: 20px;
             padding:clamp(1rem, 2vw, 2rem);
             display:grid;
