@@ -111,22 +111,41 @@
                 font-size: clamp(1rem , 2vw ,1.2rem);
             font-family: var(--font);
             }
-            .resume{
+                     .resume{
                 background-color: var(--primary);
                 color: var(--secondary);
                 transition: ease .3s;
+
+
+                a{
+                    color: var(--secondary);
+                    text-decoration: none;
+                    transition: ease .3s;
+                }
             }
             .resume:hover{
                 background-color: var(--secondBackground);
-                color: var(--primary);
+                a{
+                    color: var(--primary);
+                }
+               
             }
 
             .message{
                 transition: ease .3s;
                 background-color: var(--secondBackground);
+
+                a{
+                    text-decoration: none ;
+                    color:white; 
+                    transition: ease .3s;
+                }
             }
             .message:hover{
                 color: var(--secondary);
+                a{
+                    color: var(--secondary);
+                }
             }
         }
 
